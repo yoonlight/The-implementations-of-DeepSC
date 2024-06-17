@@ -6,14 +6,14 @@ def para_config():
     parser = argparse.ArgumentParser()
 
     # preprocessing parameters
-    parser.add_argument('--input-data-dir', default='europarl/en', type=str)
-    parser.add_argument('--output-train-dir', default='europarl/train_data.pkl', type=str)
-    parser.add_argument('--output-test-dir', default='europarl/test_data.pkl', type=str)
-    parser.add_argument('--output-vocab', default='europarl/vocab.json', type=str)
+    parser.add_argument('--input-data-dir', default='data/europarl/en', type=str)
+    parser.add_argument('--output-train-dir', default='data/europarl/train_data.pkl', type=str)
+    parser.add_argument('--output-test-dir', default='data/europarl/test_data.pkl', type=str)
+    parser.add_argument('--output-vocab', default='data/europarl/vocab.json', type=str)
 
-    parser.add_argument('--train-save-path', default='/homes/hx301/data/europarl/train_data.pkl', type=str)
-    parser.add_argument('--test-save-path', default='/homes/hx301/data/europarl/test_data.pkl', type=str)
-    parser.add_argument('--vocab-path', default='/homes/hx301/data/europarl/vocab.json', type=str)
+    parser.add_argument('--train-save-path', default='data/europarl/train_data.pkl', type=str)
+    parser.add_argument('--test-save-path', default='data/europarl/test_data.pkl', type=str)
+    parser.add_argument('--vocab-path', default='data/europarl/vocab.json', type=str)
 
     # Training parameters
     parser.add_argument('--bs', default=64, type=int, help='The training batch size')
