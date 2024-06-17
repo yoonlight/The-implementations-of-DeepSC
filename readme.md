@@ -16,8 +16,11 @@ Preprocess the raw text to create the input sequences.
 
 ```shell
 mkdir data
+cd data
 wget http://www.statmt.org/europarl/v7/europarl.tgz
 tar zxvf europarl.tgz
+mv txt europarl
+cd ..
 python dataset/preprocess_text.py
 ```
 
