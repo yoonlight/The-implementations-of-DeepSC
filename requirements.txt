@@ -1,0 +1,4 @@
+bert4keras==0.4.6
+w3lib
+nltk
+scikit-learn
