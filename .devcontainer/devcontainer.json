@@ -3,7 +3,7 @@
 {
 	"name": "DeepSC",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "tensorflow/tensorflow:2.1.2-gpu",
+	"image": "nvcr.io/nvidia/tensorflow:21.05-tf2-py3",
 	"runArgs": [
 		"--gpus=0",
 		"--ipc=host"
